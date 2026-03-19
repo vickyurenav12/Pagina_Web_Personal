@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Bornia";
+  src:
+    local("BORNIA Light"),
+    local("Bornia Light"),
+    local("BORNIA");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bornia";
+  src:
+    local("BORNIA Bold"),
+    local("Bornia Bold"),
+    local("BORNIA");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --wine: #6d120b;
+  --red: #b02a29;
+  --cream: #ffffff;
+  --navy: #113047;
+  --blue: #739ab9;
+  --ink: #113047;
+  --font-title: "Bornia", "Avenir Next", "Montserrat", sans-serif;
+  --font-body: "Bornia", "Avenir Next", "Montserrat", sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
