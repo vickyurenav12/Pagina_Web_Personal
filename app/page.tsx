@@ -96,7 +96,16 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <div className={styles.brand}>MVU</div>
+        <div className={styles.brand}>
+          <Image
+            src="/mvu-v3.png"
+            alt="Logo MVU"
+            width={52}
+            height={52}
+            className={styles.brandLogo}
+            priority
+          />
+        </div>
         <nav className={styles.nav}>
           <a href="#perfil">Perfil</a>
           <a href="#python">Python</a>

@@ -46,11 +46,15 @@
 }
 
 .brand {
-  font-family: var(--font-title);
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 3px;
-  color: var(--wine);
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+
+.brandLogo {
+  width: 52px;
+  height: auto;
+  display: block;
 }
 
 .nav {
@@ -196,7 +200,7 @@
   font-size: 20px;
   line-height: 1.6;
   max-width: 620px;
-  color: var(--section-muted);
+  color: var(--section-title);
 }
 
 .infoGrid {
@@ -222,6 +226,10 @@
   font-size: 16px;
   color: var(--section-ink);
   margin-bottom: 12px;
+}
+
+#perfil .infoCard h3 {
+  color: var(--blue) !important;
 }
 
 .infoCard ul {
@@ -343,6 +351,14 @@
   font-size: 18px;
   line-height: 1.6;
   color: var(--section-muted);
+}
+
+#recomendaciones .sectionTitle,
+#recomendaciones .sectionSubtitle,
+#recomendaciones .eyebrow,
+#recomendaciones .recoCard p,
+#recomendaciones .recoCard span {
+  color: var(--wine) !important;
 }
 
 .cardGrid {
@@ -494,7 +510,8 @@
   z-index: 1;
   padding: 24px 6vw 40px;
   font-size: 14px;
-  color: rgba(17, 48, 71, 0.66);
+  color: #ffffff;
+  text-align: center;
 }
 
 @keyframes float {
